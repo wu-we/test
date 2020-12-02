@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&amp;display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static', filename='css/destyle.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css">
+    
+    
+</head>
+<body >     
+    <div class="wrapper">
+        <header>
+            <div class="logo-container"> 
+                <img width="100%" src="{{ url_for('static', filename='images/header-logo.png')}}">
+            </div>   
+        </header>
+        <div class="login-form-container">
+            <h1>ログイン</h1>
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+            <div class="error-msg">
+                <img src="{{ url_for('static', filename='images/alert.png')}}"><p>{{ messages[0] }}</p>
+            </div>
+            {% endif %}
+            
+            <form class="login-form" method="post" action="/hayabusa/login">              
+                <label>
+                    メールアドレス
+                </label>
+                {% if messages[1] == "emailError" or messages[1] == "emptyError" %}
+                <input type="text" class="input-box error-input" name="email" placeholder="メールアドレスを入力"/>
+                {% else %}
+                <input type="text" class="input-box" name="email" placeholder="メールアドレスを入力"/>
+                {% endif %}
+                <label>
+                    パスワード
+                </label> 
+                {% if messages[1] == "passwordError" or messages[1] == "emptyError" %}
+                <input type="password" class="input-box error-input" name="password" placeholder="パスワードを入力"/>
+                {% else %}
+                <input type="password" class="input-box" name="password" placeholder="パスワードを入力"/>
+                {% endif %}
+                <a href="#">パスワードを忘れた方はこちら</a>
+                <input type="submit" value="ログイン"></input>
+            </form>
+            
+            {% endwith %}
+        </div>  
+    </div> 
+    <footer class="footer-wrapper">
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="#">会社概要</a>
+                <a href="#">プライバシポリシー</a>
+                <a href="#">利用規約</a>
+                <a href="#">FAQ</a>
+                <a href="#">お問い合わせ</a>
+            </div>
+            <div>
+                <p class="footer-company">Atmark Solution Inc.</p>
+            </div>
+        </div>
+    </footer> 
+</body>
+
+
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&amp;display=swap" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/destyle.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css">
+</head>
+<body>  
+    <div class="body-wrapper">
+    <div class="sidebar-container">
+        <a href="#" class="logo">HAYABUSA</a>
+        <a href="./dashboard.html" >ダッシュボード</a>
+        <a href="./usermenu.html">アカウント</a>
+        <a href="./survey_list.html" class="active">アンケート</a>
+        <a href="./customer_list.html">顧客</a>
+        <p class="sidebar-Inc">Atmark Solution Inc.</p>
+    </div>
+    <div class="right-wrapper">
+        <input type="checkbox" id="user-menu" class="user-menu-btn" >
+        <header class="header-container">
+
+            <div class="header-contents">
+                <div>株式会社アットマーク・ソリューション</div>
+                <label for="user-menu">大阪 大朗</label>
+            </div>
+            <div class="user-menu-container">
+                <a href="#">
+                    ヘルプ
+                   
+                </a>
+                <a href="#">
+                    お問い合わせ
+                  
+                </a>
+                <a href="#">
+                    ログアウト
+                </a>
+
+            </div>
+        </header>
+ 
+    <div class="contents-wrapper">
+        <div class="content-info">
+            <div class="content-info-title">
+                お知らせ
+            </div>
+            <div class="content-info-datas">
+                <div class="data">
+                    2020/11/28 AM 1:00 〜 AM 5:00はサーバメンテナンスのため本サービスを利用できません。
+                </div> 
+                <div class="data">
+                    2020/11/28 AM 1:00 〜 AM 5:00はサーバメンテナンスのため本サービスを利用できません。
+                </div> 
+                <div class="data">
+                    2020/11/28 AM 1:00 〜 AM 5:00はサーバメンテナンスのため本サービスを利用できません。
+                </div> 
+            </div>
+        </div>
+        <div class="survey-wrapper">
+            <div class="survey-regist-title">  
+                <a href="./answer_evaluate.html" class="font-pink">< 顧客満足度アンケートへ戻る</a>
+                <h1>
+                顧客満足度アンケート
+                </h1>
+                <a href="#" class="font-pink" style="text-align: right;">回答情報をダウンロード</a>
+            </div>
+            <div class="function answer-function">
+                <div class="function-container answer-function-container">
+                    <div class="survey-function-title">
+                        評価を確認
+                    </div>
+                    <a href="./answer_evaluate.html" class="survey-function-btn">
+                        確認する
+                    </a>
+                </div>
+                <div class="function-container answer-function-container answer-active">
+                    <div class="survey-function-title">
+                        回答を閲覧
+                    </div>
+                    <a href="./answer_list.html" class="survey-function-btn">
+                        閲覧する
+                    </a>
+                </div>
+                <div class="function-container function-empty">
+                    <div class="survey-function-title">
+                        
+                    </div>
+                    <a class="">
+                        
+                    </a>
+                </div>
+                <div class="function-container function-empty">
+                    <div class="survey-function-title">
+                        
+                    </div>
+                    <a class="">
+                    </a>
+                </div>
+            </div>
+            <div class="survey-list-table">
+                <div class="table-row-index">
+                    <div class="table-col col-1">
+                        ID
+                    </div>
+                    <div class="table-col col-3">
+                        回答日時
+                    </div>
+                    <div class="table-col col-1">
+                        回答
+                    </div>
+                </div>
+                <div class="table-data-container">
+                    <div class="table-row table-row-data">
+                        <div class="table-col col-1">
+                            1001
+                        </div>
+                        <div class="table-col col-3">
+                            2020/12/25 10:00
+                        </div>
+                        
+                        <a href="./answer_detail.html" class="table-col col-1">
+                            回答
+                        </a>
+                    </div>
+
+
+                    <div class="table-row table-row-data">
+                        <div class="table-col col-1">
+                            1003
+                        </div>
+                        <div class="table-col col-3">
+                            2020/12/25 10:00
+                        </div>
+                        
+                        <a href="./answer_detail.html" class="table-col col-1">
+                            回答
+                        </a>
+                    </div>
+
+
+                    <div class="table-row table-row-data">
+                        <div class="table-col col-1">
+                            1002
+                        </div>
+                        <div class="table-col col-3">
+                            2020/12/25 10:00
+                        </div>
+                        
+                        <a href="./answer_detail.html" class="table-col col-1">
+                            回答
+                        </a>
+                    </div>
+                </div>
+            
+        </div>  
+        </div>
+    </div>
+    </div>
+</div>
+</body>
+</html>

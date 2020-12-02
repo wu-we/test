@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&amp;display=swap" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/destyle.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css">
+</head>
+<body>  
+    <div class="body-wrapper">
+        <div class="sidebar-container">
+            <a href="#" class="logo">HAYABUSA</a>
+            <a href="./dashboard.html" >ダッシュボード</a>
+            <a href="./usermenu.html">アカウント</a>
+            <a href="./survey_list.html" >アンケート</a>
+            <a href="./customer_list.html" class="active">顧客</a>
+            <p class="sidebar-Inc">Atmark Solution Inc.</p>
+        </div>
+        <div class="right-wrapper">
+            <input type="checkbox" id="user-menu" class="user-menu-btn" >
+            <header class="header-container">
+
+                <div class="header-contents">
+                    <div>株式会社アットマーク・ソリューション</div>
+                    <label for="user-menu">大阪 大朗</label>
+                </div>
+                <div class="user-menu-container">
+                    <a href="#">
+                        ヘルプ
+                       
+                    </a>
+                    <a href="#">
+                        お問い合わせ
+                      
+                    </a>
+                    <a href="#">
+                        ログアウト
+                    </a>
+
+                </div>
+            </header>
+    
+        <div class="contents-wrapper">
+            <div class="content-info">
+                <div class="content-info-title">
+                    お知らせ
+                </div>
+                <div class="content-info-datas">
+                    <div class="data">
+                        2020/11/28 AM 1:00 〜 AM 5:00はサーバメンテナンスのため本サービスを利用できません。
+                    </div> 
+                    <div class="data">
+                        2020/11/28 AM 1:00 〜 AM 5:00はサーバメンテナンスのため本サービスを利用できません。
+                    </div> 
+                    <div class="data">
+                        2020/11/28 AM 1:00 〜 AM 5:00はサーバメンテナンスのため本サービスを利用できません。
+                    </div> 
+                </div>
+            </div>
+            <div class="survey-wrapper">
+                <div class="answer-list-title"> 
+                    <h1>
+                        顧客属性編集
+                    </h1>
+                    <a href="＃" class="font-pink">顧客をダウンロード</a>
+                </div>
+                <div class="function answer-function">
+                    <div class="function-container survey-function-container">
+                        <div class="survey-function-title">
+                            顧客情報を確認
+                        </div>
+                        <a href="./customer_list.html"  class="survey-function-btn">
+                            確認する
+                        </a>
+                    </div>
+                    <div class="function-container survey-function-container survey-active">
+                        <div class="survey-function-title">
+                            顧客属性を編集
+                        </div>
+                        <a href="./answer_list.html" class="survey-function-btn">
+                            編集する
+                        </a>
+                    </div>
+                    <div class="function-container function-empty">
+                        <div class="survey-function-title">
+                            
+                        </div>
+                        <a class="">
+                        </a>
+                    </div>
+                    <div class="function-container function-empty">
+                        <div class="survey-function-title">
+                            
+                        </div>
+                        <a class="">
+                        </a>
+                    </div>
+                </div>
+                <div class="survey-wrapper">
+                    <div class="customer-attribute-form">
+                        <div class="regist-row">
+                            <div class="regist-row-title">
+                                <div class="regist-title">
+                                    お名前
+                                </div>
+                            </div><div>
+                            <input type="text" class="" placeholder="大阪太郎">
+                            
+                            <label>
+                                表示
+                                <input type="checkbox">
+                            </label>
+                            <label>
+                                必要
+                                <input type="checkbox">
+                            </label></div>
+                        </div>
+                        <div class="regist-row">
+                            <div class="regist-row-title">
+                                <div class="regist-title">
+                                    メールアドレス
+                                </div>
+                            </div>
+                            <div><div>
+                                <input type="text" class="" placeholder="osaka_tarou@atmarksol.jp">
+                                <label>
+                                    表示
+                                    <input type="checkbox">
+                                </label>
+                                <label>
+                                    必要
+                                    <input type="checkbox">
+                                </label></div>
+                            </div>
+                        </div>
+                        <div class="regist-row">
+                            <div class="regist-row-title">
+                                <div class="regist-title">
+                                    電話番号
+                                </div>
+                            </div><div>
+                            <input type="text" class="" placeholder="08000000000">
+                            <label>
+                                表示
+                                <input type="checkbox">
+                            </label>
+                            <label>
+                                必要
+                                <input type="checkbox">
+                            </label></div>
+                        </div>
+                        <div class="regist-row">
+                            <div class="regist-row-title">
+                                <div class="regist-title">
+                                    郵便番号
+                                </div>
+                            </div><div>
+                            <input type="text" class="" placeholder="5420061">
+                            <label>
+                                表示
+                                <input type="checkbox">
+                            </label>
+                            <label>
+                                必要
+                                <input type="checkbox">
+                            </label></div>
+                        </div>
+                        <div class="regist-row">
+                            <div class="regist-row-title">
+                                <div class="regist-title">
+                                    カスタム属性1
+                                </div>
+                            </div><div>
+                            <input type="text" class="" placeholder="あああああ">
+                            <label>
+                                表示
+                                <input type="checkbox">
+                            </label>
+                            <label>
+                                必要
+                                <input type="checkbox"></div>
+                            </label>
+                        </div>
+                        <div class="regist-row">
+                            <div class="regist-row-title">
+                                <div class="regist-title">
+                                    カスタム属性2
+                                </div>
+                            </div><div>
+                            <input type="text" class="" placeholder="あああああ">
+                            <label>
+                                表示
+                                <input type="checkbox">
+                            </label>
+                            <label>
+                                必要
+                                <input type="checkbox">
+                            </label></div>
+                        </div>
+                        <div class="regist-row">
+                            <div class="regist-row-title">
+                                <div class="regist-title">
+                                    カスタム属性3
+                                </div>
+                            </div><div>
+                            <input type="text" class="" placeholder="あああああ">
+                            <label>
+                                表示
+                                <input type="checkbox">
+                            </label>
+                            <label>
+                                必要
+                                <input type="checkbox">
+                            </label></div>
+                        </div>
+                        <div class="regist-row">
+                            <div class="regist-row-title">
+                                <div class="regist-title">
+                                    カスタム属性4
+                                </div>
+                            </div><div>
+                            <input type="text" class="" placeholder="あああああ">
+                            <label>
+                                表示
+                                <input type="checkbox">
+                            </label>
+                            <label>
+                                必要
+                                <input type="checkbox">
+                            </label></div>
+                        </div>
+                        <div class="regist-row">
+                            <div class="regist-row-title">
+                                <div class="regist-title">
+                                    カスタム属性5
+                                </div>
+                            </div><div>
+                            <input type="text" class="" placeholder="あああああ"><label>
+                                表示
+                                <input type="checkbox">
+                            </label>
+                            <label>
+                                必要
+                                <input type="checkbox">
+                            </label></div>
+                        </div>
+                        <div class="regist-row">
+                            <div class="regist-row-title">
+                                <div class="regist-title">
+                                    カスタム属性6
+                                </div>
+                            </div><div>
+                            <input type="text" class="" placeholder="あああああ">
+                            <label>
+                                表示
+                                <input type="checkbox">
+                            </label>
+                            <label>
+                                必要
+                                <input type="checkbox">
+                            </label></div>
+                        </div>
+                        <div class="regist-row">
+                            <div class="regist-row-title">
+                                <div class="regist-title">
+                                    カスタム属性7
+                                </div>
+                            </div><div>
+                           <input type="text" class="" placeholder="あああああ">
+                            <label>
+                                表示
+                                <input type="checkbox">
+                            </label>
+                            <label>
+                                必要
+                                <input type="checkbox">
+                            </label></div>
+                        </div>
+                        <div class="regist-row">
+                            <div class="regist-row-title">
+                                <div class="regist-title">
+                                    カスタム属性8
+                                </div>
+                            </div><div>
+                            <input type="text" class="" placeholder="あああああ">
+                            <label>
+                                表示
+                                <input type="checkbox">
+                            </label>
+                            <label>
+                                必要
+                                <input type="checkbox">
+                            </label></div>
+                        </div>
+                        <div class="regist-row">
+                            <div class="regist-row-title">
+                                <div class="regist-title">
+                                    カスタム属性9
+                                </div>
+                            </div><div>
+                            <input type="text" class="" placeholder="あああああ">
+                            <label>
+                                表示
+                                <input type="checkbox">
+                            </label>
+                            <label>
+                                必要
+                                <input type="checkbox">
+                            </label></div>
+                        </div>
+                        <div class="regist-row">
+                            <div class="regist-row-title">
+                                <div class="regist-title">
+                                    カスタム属性10
+                                </div>
+                            </div><div>
+                            <input type="text" class="" placeholder="あああああ">
+                            <label>
+                                表示
+                                <input type="checkbox">
+                            </label>
+                            <label>
+                                必要
+                                <input type="checkbox">
+                            </label></div>
+                        </div>
+                        <a href="customer_list.html" class="back-btn">戻る</a>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div> 
+</body>
+</html>

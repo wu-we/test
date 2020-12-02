@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&amp;display=swap" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/destyle.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css">
+</head>
+<body>  
+    <div class="body-wrapper">
+    <div class="sidebar-container">
+        <a href="#" class="logo">HAYABUSA</a>
+        <a href="./dashboard.html" >ダッシュボード</a>
+        <a href="./usermenu.html">アカウント</a>
+        <a href="./survey_list.html" class="active">アンケート</a>
+        <a href="./customer_list.html">顧客</a>
+        <p class="sidebar-Inc">Atmark Solution Inc.</p>
+    </div>
+    <div class="right-wrapper">
+        <input type="checkbox" id="user-menu" class="user-menu-btn" >
+        <header class="header-container">
+
+            <div class="header-contents">
+                <div>株式会社アットマーク・ソリューション</div>
+                <label for="user-menu">大阪 大朗</label>
+            </div>
+            <div class="user-menu-container">
+                <a href="#">
+                    ヘルプ
+                   
+                </a>
+                <a href="#">
+                    お問い合わせ
+                  
+                </a>
+                <a href="#">
+                    ログアウト
+                </a>
+
+            </div>
+        </header>
+ 
+    <div class="contents-wrapper">
+        <div class="content-info">
+            <div class="content-info-title">
+                お知らせ
+            </div>
+            <div class="content-info-datas">
+                <div class="data">
+                    2020/11/28 AM 1:00 〜 AM 5:00はサーバメンテナンスのため本サービスを利用できません。
+                </div> 
+                <div class="data">
+                    2020/11/28 AM 1:00 〜 AM 5:00はサーバメンテナンスのため本サービスを利用できません。
+                </div> 
+                <div class="data">
+                    2020/11/28 AM 1:00 〜 AM 5:00はサーバメンテナンスのため本サービスを利用できません。
+                </div> 
+            </div>
+        </div>
+        <div class="survey-wrapper">
+            <div class="answer-detail-title">  
+                <a href="./answer_all_list.html" class="font-pink"> < 回答一覧へ戻る</a>
+                <h1>
+                    回答詳細
+                </h1>
+            </div>
+            <div class="answer-detail-form">
+                <div class="regist-row">
+                    <div class="regist-row-title">
+                        <div class="regist-title">
+                            回答者
+                        </div>
+                    </div>
+                    <input type="text" class="" placeholder="大阪太郎">
+                </div>
+                <div class="regist-row">
+                    <div class="regist-row-title">
+                        <div class="regist-title">
+                            Q1. 担当者の接客態度は？
+                        </div>
+                    </div>
+                    <input type="text" class="" placeholder="8: とても良い">
+                </div>
+                <div class="regist-row">
+                    <div class="regist-row-title">
+                        <div class="regist-title">
+                            説明
+                        </div>
+                    </div>
+                    <textarea style="line-height: 2;padding: 5px 30px 15px 15px;">ああああああああああああああああああああああああああああああああああああああ
+あああああああああああああああ
+ああああああああ</textarea>
+                </div>
+                <a href="./answer_list.html" class="back-btn">戻る</a>
+            </div>  
+        </div>
+    </div>
+    </div>
+</div>
+</body>
+</html>

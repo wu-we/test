@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&amp;display=swap" rel="stylesheet">
+
+    <link href="{{ url_for('static', filename='css/destyle.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css">
+</head>
+<body>  
+    <div class="body-wrapper">
+    <div class="sidebar-container">
+        <a href="#" class="logo">HAYABUSA</a>
+        <a href="./dashboard.html" >ダッシュボード</a>
+        <a href="./usermenu.html">アカウント</a>
+        <a href="./survey_list.html" class="active">アンケート</a>
+        <a href="./customer_list.html">顧客</a>
+        <p class="sidebar-Inc">Atmark Solution Inc.</p>
+    </div>
+    <div class="right-wrapper">
+        <input type="checkbox" id="user-menu" class="user-menu-btn" >
+        <header class="header-container">
+
+            <div class="header-contents">
+                <div>株式会社アットマーク・ソリューション</div>
+                <label for="user-menu">大阪 大朗</label>
+            </div>
+            <div class="user-menu-container">
+                <a href="#">
+                    ヘルプ
+                   
+                </a>
+                <a href="#">
+                    お問い合わせ
+                  
+                </a>
+                <a href="#">
+                    ログアウト
+                </a>
+
+            </div>
+        </header>
+ 
+    <div class="contents-wrapper">
+        <div class="content-info">
+            <div class="content-info-title">
+                お知らせ
+            </div>
+            <div class="content-info-datas">
+                <div class="data">
+                    2020/11/28 AM 1:00 〜 AM 5:00はサーバメンテナンスのため本サービスを利用できません。
+                </div> 
+                <div class="data">
+                    2020/11/28 AM 1:00 〜 AM 5:00はサーバメンテナンスのため本サービスを利用できません。
+                </div> 
+                <div class="data">
+                    2020/11/28 AM 1:00 〜 AM 5:00はサーバメンテナンスのため本サービスを利用できません。
+                </div> 
+            </div>
+        </div>
+        <div class="survey-wrapper">
+            <h1>
+            アンケート一覧
+            </h1>
+            <div class="function survey-function">
+                <div class="function-container survey-function-container survey-active">
+                    <div class="survey-function-title">
+                        アンケートを確認
+                    </div>
+                    <a class="survey-function-btn">
+                        確認する
+                    </a>
+                </div>
+                <div class="function-container survey-function-container">
+                    <div class="survey-function-title">
+                        アンケートを登録
+                    </div>
+                    <a href="./survey_regist.html" class="survey-function-btn">
+                        登録する
+                    </a>
+                </div>
+                <div class="function-container survey-function-container">
+                    <div class="survey-function-title">
+                        アンケートを分析
+                    </div>
+                    <a class="survey-function-btn">
+                        分析する
+                    </a>
+                </div>
+                <div class="function-container survey-function-container"> 
+                    <div class="survey-function-title">
+                        回答を確認
+                    </div>
+                    <a href="./answer_all_list.html" class="survey-function-btn">
+                        閱覽する
+                    </a>
+                </div>
+            </div>
+            <div class="survey-list-table">
+                <div class="table-row-index">
+                    <div class="table-col col-1">
+                        ID
+                    </div>
+                    <div class="table-col col-3">
+                        タイトル
+                    </div>
+                    <div class="table-col col-4">
+                        説明
+                    </div>
+                    <div class="table-col col-1">
+                        質問数
+                    </div>
+                    <div class="table-col col-2">
+                        更新日
+                    </div>
+                    <div class="table-col col-1">
+                        回答
+                    </div>
+                    <div class="table-col col-1">
+                        QR
+                    </div>
+                </div>
+                <div class="table-data-container">
+                    <div class="table-row">
+                        <a href="#" class="table-col col-1 ">
+                            1001
+                        </a>
+                        <div class="table-col col-3">
+                            顧客満足度アンケート
+                        </div>
+                        <div class="table-col col-4 table-col-content">
+                            <div class="table-survey-content">
+                            このアンケートは、アットマークサロンの顧客
+                            満足度アンケートです。アンケートにお答え…
+                            </div>
+                        </div>
+                        <div class="table-col col-1">
+                            全 10 問
+                        </div>
+                        <div class="table-col col-2">
+                            2020/12/25
+                        </div>
+                        <a href="#" class="table-col col-1">
+                            回答
+                        </a>
+                        <div class="table-col col-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                <g id="グループ_84" data-name="グループ 84" transform="translate(-913.892 -508)">
+                                  <rect id="長方形_123" data-name="長方形 123" width="20" height="20" transform="translate(913.892 508)" fill="#707070"/>
+                                  <rect id="長方形_124" data-name="長方形 124" width="20" height="20" transform="translate(913.892 508)" fill="#707070"/>
+                                  <rect id="長方形_125" data-name="長方形 125" width="20" height="20" transform="translate(913.892 508)" fill="none"/>
+                                  <rect id="長方形_126" data-name="長方形 126" width="10" height="10" transform="translate(916.392 510.5)" fill="none"/>
+                                  <rect id="長方形_127" data-name="長方形 127" width="20" height="20" transform="translate(913.892 508)" fill="none"/>
+                                  <rect id="長方形_128" data-name="長方形 128" width="10" height="10" transform="translate(921.392 510.5)" fill="#fff"/>
+                                  <rect id="長方形_129" data-name="長方形 129" width="10" height="10" transform="translate(921.392 510.5)" fill="#fff"/>
+                                  <rect id="長方形_130" data-name="長方形 130" width="10" height="10" transform="translate(916.392 515.5)" fill="#fff"/>
+                                </g>
+                              </svg>
+                        </div>
+                    </div>
+
+
+                    <div class="table-row">
+                        <a href="#" class="table-col col-1 ">
+                            1002
+                        </a>
+                        <div class="table-col col-3">
+                            顧客満足度アンケート
+                        </div>
+                        <div class="table-col col-4 table-col-content">
+                            <div class="table-survey-content">
+                            このアンケートは、アットマークサロンの顧客
+                            満足度アンケートです。アンケートにお答え…
+                            </div>
+                        </div>
+                        <div class="table-col col-1">
+                            全 80 問
+                        </div>
+                        <div class="table-col col-2">
+                            2020/12/2
+                        </div>
+                        <a href="#" class="table-col col-1">
+                            回答
+                        </a>
+                        <div class="table-col col-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                <g id="グループ_84" data-name="グループ 84" transform="translate(-913.892 -508)">
+                                  <rect id="長方形_123" data-name="長方形 123" width="20" height="20" transform="translate(913.892 508)" fill="#707070"/>
+                                  <rect id="長方形_124" data-name="長方形 124" width="20" height="20" transform="translate(913.892 508)" fill="#707070"/>
+                                  <rect id="長方形_125" data-name="長方形 125" width="20" height="20" transform="translate(913.892 508)" fill="none"/>
+                                  <rect id="長方形_126" data-name="長方形 126" width="10" height="10" transform="translate(916.392 510.5)" fill="none"/>
+                                  <rect id="長方形_127" data-name="長方形 127" width="20" height="20" transform="translate(913.892 508)" fill="none"/>
+                                  <rect id="長方形_128" data-name="長方形 128" width="10" height="10" transform="translate(921.392 510.5)" fill="#fff"/>
+                                  <rect id="長方形_129" data-name="長方形 129" width="10" height="10" transform="translate(921.392 510.5)" fill="#fff"/>
+                                  <rect id="長方形_130" data-name="長方形 130" width="10" height="10" transform="translate(916.392 515.5)" fill="#fff"/>
+                                </g>
+                              </svg>
+                        </div>
+                    </div>
+
+
+                    <div class="table-row">
+                        <a href="#" class="table-col col-1 ">
+                            1003
+                        </a>
+                        <div class="table-col col-3">
+                            顧客満足度アンケート
+                        </div>
+                        <div class="table-col col-4 table-col-content">
+                            <div class="table-survey-content">
+                            このアンケートは、アットマークサロンの顧客
+                            満足度アンケートです。アンケートにお答え…
+                            </div>
+                        </div>
+                        <div class="table-col col-1">
+                            全 9 問
+                        </div>
+                        <div class="table-col col-2">
+                            2020/12/9
+                        </div>
+                        <a href="#" class="table-col col-1">
+                            回答
+                        </a>
+                        <div class="table-col col-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                <g id="グループ_84" data-name="グループ 84" transform="translate(-913.892 -508)">
+                                  <rect id="長方形_123" data-name="長方形 123" width="20" height="20" transform="translate(913.892 508)" fill="#707070"/>
+                                  <rect id="長方形_124" data-name="長方形 124" width="20" height="20" transform="translate(913.892 508)" fill="#707070"/>
+                                  <rect id="長方形_125" data-name="長方形 125" width="20" height="20" transform="translate(913.892 508)" fill="none"/>
+                                  <rect id="長方形_126" data-name="長方形 126" width="10" height="10" transform="translate(916.392 510.5)" fill="none"/>
+                                  <rect id="長方形_127" data-name="長方形 127" width="20" height="20" transform="translate(913.892 508)" fill="none"/>
+                                  <rect id="長方形_128" data-name="長方形 128" width="10" height="10" transform="translate(921.392 510.5)" fill="#fff"/>
+                                  <rect id="長方形_129" data-name="長方形 129" width="10" height="10" transform="translate(921.392 510.5)" fill="#fff"/>
+                                  <rect id="長方形_130" data-name="長方形 130" width="10" height="10" transform="translate(916.392 515.5)" fill="#fff"/>
+                                </g>
+                              </svg>
+                        </div>
+                    </div>
+                </div>
+            
+        </div>  
+        </div>
+    </div>
+    </div>
+</div>
+</body>
+</html>
